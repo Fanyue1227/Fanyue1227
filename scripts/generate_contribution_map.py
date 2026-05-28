@@ -14,7 +14,6 @@ ASSETS = ROOT / "assets"
 OUTPUT = ASSETS / "contribution-map.svg"
 
 TEXTURES = {
-    "grass": ASSETS / "Grass_Block_(side_texture)_JE2_BE2.png",
     "stone": ASSETS / "Stone_(texture)_JE5_BE3.png",
     1: ASSETS / "96px-Coal_Ore_(texture)_JE5_BE4.png",
     2: ASSETS / "96px-Iron_Ore_(texture)_JE6_BE4.png",
@@ -75,7 +74,7 @@ def build_svg(records: list[tuple[date, int]]) -> str:
     left = 52
     top = 42
     month_y = 18
-    grid_top = top + cell + gap
+    grid_top = top
     bottom_pad = 30
     right_pad = 14
 
@@ -123,10 +122,6 @@ def build_svg(records: list[tuple[date, int]]) -> str:
     for row, label in [(1, "Mon"), (3, "Wed"), (5, "Fri")]:
         y = grid_top + row * (cell + gap) + 13
         svg.append(f'<text x="14" y="{y}">{label}</text>')
-
-    for col in range(weeks):
-        x = left + col * (cell + gap)
-        svg.append(image_tag(uris["grass"], x, top, cell, "decorative grass row"))
 
     for day, level in records:
         col = (day - start).days // 7
