@@ -1,9 +1,5 @@
 <p align="center">
-  <video src="./assets/github-ready-video-banner.mp4" controls width="100%"></video>
-</p>
-
-<p align="center">
-  <a href="./assets/github-ready-video-banner.mp4">Watch video</a>
+  <img src="./assets/profile-banner.gif" alt="Profile banner animation" width="100%" />
 </p>
 
 <table align="center" width="100%" cellpadding="8">
