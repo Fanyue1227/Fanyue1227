@@ -3,5 +3,5 @@
 </p>
 
 <p align="center">
-  <img src="https://ghchart.rshah.org/37c7b7/Fanyue1227" alt="GitHub contribution calendar" width="100%" />
+  <img src="./assets/contribution-map.svg" alt="Minecraft block contribution map" width="100%" />
 </p>
